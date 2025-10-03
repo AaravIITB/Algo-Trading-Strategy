@@ -230,7 +230,7 @@ metrics["Portfolio"] = calculate_metrics(portfolio["Total"])
 # ------------------- Results -------------------
 metrics_df = pd.DataFrame(metrics).T
 print(metrics_df)
-metrics_df.to_csv('Metrics_10companies.csv')
+metrics_df.to_csv('Results/Metrics_10companies.csv')
 
 print("\n=== TRADES PER COMPANY (sample) ===")
 for ticker, tdf in all_trades.items():
